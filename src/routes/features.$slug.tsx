@@ -149,7 +149,7 @@ function FeatureArticle() {
   return (
     <article>
       {/* HERO */}
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-24 pb-20">
           <Link to="/features" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-muted-foreground hover:text-gold transition">
             <ArrowLeft size={12} /> All Editorial Features
@@ -186,7 +186,7 @@ function FeatureArticle() {
                 <a href={f.amazon} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
                   Order on Amazon <ArrowRight size={16} />
                 </a>
-                <Link to="/contact" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+                <Link to="/contact" className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
                   Work With Us
                 </Link>
               </div>
@@ -218,7 +218,7 @@ function FeatureArticle() {
       </section>
 
       {/* PILLARS */}
-      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
+      <section className="py-24 border-t border-[oklch(0.236_0.047_306_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="max-w-2xl">
             <span className="text-[11px] uppercase tracking-[0.28em] text-gold">The Power of {f.title}</span>
@@ -237,7 +237,7 @@ function FeatureArticle() {
       </section>
 
       {/* CRITICAL ACCLAIM */}
-      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="py-24 border-t border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Critical Acclaim</span>
           <Quote className="mx-auto mt-8 text-gold" size={32} />
@@ -249,7 +249,7 @@ function FeatureArticle() {
       </section>
 
       {/* AUTHOR MESSAGE */}
-      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
+      <section className="py-24 border-t border-[oklch(0.236_0.047_306_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <span className="text-[11px] uppercase tracking-[0.28em] text-gold">A Message From the Author</span>
           <blockquote className="mt-8 font-serif text-3xl md:text-4xl italic leading-snug">
@@ -260,7 +260,7 @@ function FeatureArticle() {
       </section>
 
       {/* BOOK DETAILS + CTA */}
-      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="py-24 border-t border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1140px] px-6 grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
             <img
@@ -272,7 +272,7 @@ function FeatureArticle() {
           <div className="md:col-span-7">
             <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Book Details</span>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl leading-tight">Order your copy today.</h2>
-            <dl className="mt-10 divide-y divide-[oklch(0.308_0.034_127_/_0.16)] border-t border-b border-[oklch(0.308_0.034_127_/_0.16)]">
+            <dl className="mt-10 divide-y divide-[oklch(0.236_0.047_306_/_0.16)] border-t border-b border-[oklch(0.236_0.047_306_/_0.16)]">
               {f.bookDetails.map((d) => (
                 <div key={d.label} className="grid grid-cols-3 py-4">
                   <dt className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{d.label}</dt>
@@ -284,7 +284,7 @@ function FeatureArticle() {
               <a href={f.amazon} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
                 Order on Amazon <ArrowRight size={16} />
               </a>
-              <Link to="/features" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+              <Link to="/features" className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
                 More Editorial Features
               </Link>
             </div>
@@ -293,7 +293,7 @@ function FeatureArticle() {
       </section>
 
       {/* CLOSING NOTE */}
-      <section className="py-20 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
+      <section className="py-20 border-t border-[oklch(0.236_0.047_306_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-2xl px-6 text-center">
           <p className="text-sm text-muted-foreground leading-relaxed">
             Editorial feature written and presented by <span className="text-gold">GrowthSpark Impact</span> — a platform dedicated to amplifying voices that matter.

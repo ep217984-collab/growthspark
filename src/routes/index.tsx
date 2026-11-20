@@ -317,7 +317,7 @@ function RealClientWork() {
         <div className="mt-14 grid md:grid-cols-2 gap-6">
           {items.map((i) => (
             <Link key={i.t} to="/portfolio" className="group block">
-              <div className="aspect-[16/10] rounded-2xl border border-[oklch(0.308_0.034_127_/_0.16)] bg-[var(--section-alt)] overflow-hidden relative">
+              <div className="aspect-[16/10] rounded-2xl border border-[oklch(0.236_0.047_306_/_0.16)] bg-[var(--section-alt)] overflow-hidden relative">
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="text-[10px] uppercase tracking-[0.28em] text-gold">{i.cat}</div>
                   <div className="mt-2 font-serif text-2xl">{i.t}</div>

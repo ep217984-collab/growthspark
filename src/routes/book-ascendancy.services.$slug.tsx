@@ -56,7 +56,7 @@ function ProgramDetail() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1140px] px-6 pt-28 pb-16">
           <Link to="/book-ascendancy/services" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-gold transition">
             <ArrowLeft size={14} /> All Programs
@@ -74,7 +74,7 @@ function ProgramDetail() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               {program.ctaLabel} <ArrowRight size={16} />
             </Link>
-            <Link to="/book-ascendancy" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/book-ascendancy" className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               About Book Ascendancy
             </Link>
           </div>
@@ -93,7 +93,7 @@ function ProgramDetail() {
               <span className="text-[11px] uppercase tracking-[0.22em] text-gold">How Readers Participate</span>
               <p className="mt-3 text-muted-foreground leading-relaxed">{program.readerParticipation}</p>
             </div>
-            <div className="rounded-2xl border border-gold/30 bg-[oklch(0.308_0.034_127_/_0.04)] p-8">
+            <div className="rounded-2xl border border-gold/30 bg-[oklch(0.236_0.047_306_/_0.04)] p-8">
               <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.22em] text-gold">
                 <ShieldCheck size={12} /> GrowthSpark Impact × Book Ascendancy
               </div>
@@ -136,7 +136,7 @@ function ProgramDetail() {
               <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-6 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition">
                 {program.ctaLabel} <ArrowRight size={14} />
               </Link>
-              <Link to="/book-ascendancy/services" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+              <Link to="/book-ascendancy/services" className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
                 View All Programs
               </Link>
             </div>
@@ -151,7 +151,7 @@ function ProgramDetail() {
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">Common questions.</h2>
           <Accordion type="single" collapsible className="mt-8">
             {getProgramFaqs(slug).map((f, i) => (
-              <AccordionItem key={f.q} value={`faq-${i}`} className="border-[oklch(0.308_0.034_127_/_0.18)]">
+              <AccordionItem key={f.q} value={`faq-${i}`} className="border-[oklch(0.236_0.047_306_/_0.18)]">
                 <AccordionTrigger className="text-left font-serif text-lg">{f.q}</AccordionTrigger>
                 <AccordionContent>
                   <p className="text-muted-foreground leading-relaxed">{f.a}</p>
@@ -163,7 +163,7 @@ function ProgramDetail() {
       </section>
 
       {/* PREV / NEXT */}
-      <section className="py-16 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="py-16 border-t border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1140px] px-6 grid sm:grid-cols-2 gap-4">
           {prev && (
             <Link

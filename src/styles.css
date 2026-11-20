@@ -33,56 +33,57 @@
   --color-surface: var(--surface);
   --color-ink: var(--ink);
   --color-gold: var(--gold);
-  --color-clay: var(--clay);
-  --color-clay-deep: var(--clay-deep);
+  --color-sea: var(--sea);
+  --color-sea-deep: var(--sea-deep);
   --color-section-alt: var(--section-alt);
 }
 
 /*
-  Palette: olive + blush.
+  Palette: celadon + aubergine.
   Note: the variable and class names still say "gold" (text-gold, btn-gold, rule-gold)
-  from the first design. They now render in olive/clay, so no page code had to change.
+  from the first design. They now render in aubergine, so no page code had to change.
+  Sea-glass green is too light to read as text, so it is used for decoration only.
 */
 :root {
   --radius: 0.875rem;
 
-  /* Warm blush paper and dark olive ink */
-  --background: oklch(0.951 0.015 68);        /* #F6EDE4 */
-  --foreground: oklch(0.308 0.034 127);       /* #2B3320 */
+  /* Celadon mist paper and deep plum-black ink */
+  --background: oklch(0.930 0.020 131);       /* #E3EBDD */
+  --foreground: oklch(0.236 0.047 306);       /* #241830 */
 
-  --surface: oklch(0.978 0.009 78);           /* #FBF7F1 */
-  --ink: oklch(0.308 0.034 127);
-  --section-alt: oklch(0.919 0.023 72);       /* #EEE2D4, alternating sections */
+  --surface: oklch(0.964 0.013 131);          /* #F0F5EC */
+  --ink: oklch(0.236 0.047 306);
+  --section-alt: oklch(0.895 0.029 134);      /* #D5E1CE, alternating sections */
 
-  --card: oklch(0.978 0.009 78);
-  --card-foreground: oklch(0.308 0.034 127);
-  --popover: oklch(0.978 0.009 78);
-  --popover-foreground: oklch(0.308 0.034 127);
+  --card: oklch(0.964 0.013 131);
+  --card-foreground: oklch(0.236 0.047 306);
+  --popover: oklch(0.964 0.013 131);
+  --popover-foreground: oklch(0.236 0.047 306);
 
-  /* Olive: main brand colour for buttons, links and eyebrows (#586733) */
-  --primary: oklch(0.488 0.078 123);
-  --primary-foreground: oklch(0.951 0.015 68);
-  --gold: oklch(0.488 0.078 123);
+  /* Aubergine: buttons, links and eyebrows (#4A2545) */
+  --primary: oklch(0.327 0.073 332);
+  --primary-foreground: oklch(0.930 0.020 131);
+  --gold: oklch(0.327 0.073 332);
 
-  /* Rose clay: warm accent (#C98A7B), deeper version for text (#A35C4B) */
-  --clay: oklch(0.693 0.081 34);
-  --clay-deep: oklch(0.553 0.097 34);
+  /* Sea-glass green (#6FA08A) for decoration, deeper version (#3A7560) for large text */
+  --sea: oklch(0.664 0.062 165);
+  --sea-deep: oklch(0.516 0.071 168);
 
-  --secondary: oklch(0.900 0.026 77);         /* #E8DCCB */
-  --secondary-foreground: oklch(0.308 0.034 127);
+  --secondary: oklch(0.881 0.032 135);        /* #CFDDC8 */
+  --secondary-foreground: oklch(0.236 0.047 306);
 
-  --muted: oklch(0.900 0.026 77);
-  --muted-foreground: oklch(0.494 0.035 122); /* #5E654F */
+  --muted: oklch(0.881 0.032 135);
+  --muted-foreground: oklch(0.428 0.035 310); /* #554A5E */
 
-  --accent: oklch(0.693 0.081 34 / 0.2);
-  --accent-foreground: oklch(0.308 0.034 127);
+  --accent: oklch(0.664 0.062 165 / 0.25);
+  --accent-foreground: oklch(0.236 0.047 306);
 
   --destructive: oklch(0.55 0.2 27);
   --destructive-foreground: oklch(0.98 0 0);
 
-  --border: oklch(0.308 0.034 127 / 0.18);
-  --input: oklch(0.308 0.034 127 / 0.25);
-  --ring: oklch(0.553 0.085 121);
+  --border: oklch(0.236 0.047 306 / 0.18);
+  --input: oklch(0.236 0.047 306 / 0.28);
+  --ring: oklch(0.516 0.071 168);
 }
 
 @layer base {
@@ -99,7 +100,7 @@
     letter-spacing: -0.015em;
     font-weight: 600;
   }
-  ::selection { background: oklch(0.693 0.081 34 / 0.35); color: var(--color-foreground); }
+  ::selection { background: oklch(0.664 0.062 165 / 0.4); color: var(--color-foreground); }
 }
 
 @utility text-gold {
@@ -108,16 +109,16 @@
 
 @utility text-gradient-gold {
   /* kept the old name; now a plain solid colour, no gradient */
-  color: var(--color-clay-deep);
+  color: var(--color-sea-deep);
 }
 
 @utility hairline {
-  border-color: oklch(0.308 0.034 127 / 0.16);
+  border-color: oklch(0.236 0.047 306 / 0.16);
 }
 
 @utility surface-card {
   background: var(--card);
-  border: 1px solid oklch(0.308 0.034 127 / 0.12);
+  border: 1px solid oklch(0.236 0.047 306 / 0.12);
   transition: transform .35s ease, border-color .35s ease, background .35s ease;
 }
 @utility lift {
@@ -158,7 +159,7 @@
   display: inline-block;
   height: 1px;
   width: 2.5rem;
-  background: var(--color-clay);
+  background: var(--color-sea);
   opacity: 1;
 }
 @utility container-editorial {
@@ -199,10 +200,10 @@
   color: var(--color-muted-foreground);
 }
 @utility hairline-t {
-  border-top: 1px solid oklch(0.308 0.034 127 / 0.14);
+  border-top: 1px solid oklch(0.236 0.047 306 / 0.14);
 }
 @utility hairline-b {
-  border-bottom: 1px solid oklch(0.308 0.034 127 / 0.14);
+  border-bottom: 1px solid oklch(0.236 0.047 306 / 0.14);
 }
 @utility btn-gold {
   display: inline-flex;
@@ -223,7 +224,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  border: 1px solid oklch(0.308 0.034 127 / 0.3);
+  border: 1px solid oklch(0.236 0.047 306 / 0.3);
   color: var(--color-foreground);
   padding: 0.95rem 1.75rem;
   border-radius: 999px;
@@ -232,7 +233,7 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   transition: border-color .2s ease, color .2s ease;
-  &:hover { border-color: var(--color-clay-deep); color: var(--color-clay-deep); }
+  &:hover { border-color: var(--color-gold); color: var(--color-gold); }
 }
 
 @keyframes editorial-fade {

@@ -839,7 +839,7 @@ function EditorialArticle() {
   return (
     <article className="pb-24">
       {/* HERO */}
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-16 pb-16">
           <Link to="/editorial/featured-authors" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-muted-foreground hover:text-gold transition">
             <ArrowLeft size={12} /> All Featured Authors
@@ -887,7 +887,7 @@ function EditorialArticle() {
                 )}
                 <button
                   onClick={() => window.print()}
-                  className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
+                  className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
                 >
                   <Printer size={14} /> Download This Article as PDF
                 </button>
@@ -937,7 +937,7 @@ function EditorialArticle() {
                     <img
                       src={f.authorPhoto}
                       alt={`${f.author}, author of ${f.title}`}
-                      className="w-full max-w-[220px] rounded-xl object-cover shadow-2xl border border-[oklch(0.308_0.034_127_/_0.16)]"
+                      className="w-full max-w-[220px] rounded-xl object-cover shadow-2xl border border-[oklch(0.236_0.047_306_/_0.16)]"
                     />
                     <figcaption className="mt-3 text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{f.author}</figcaption>
                   </figure>
@@ -985,7 +985,7 @@ function EditorialArticle() {
                           </span>
                         ),
                       )}
-                      <Link to="/contact" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-5 py-2.5 rounded-full text-sm hover:border-gold hover:text-gold transition">
+                      <Link to="/contact" className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-5 py-2.5 rounded-full text-sm hover:border-gold hover:text-gold transition">
                         Learn more about this book
                       </Link>
                     </div>
@@ -1073,7 +1073,7 @@ function EditorialArticle() {
               </div>
             </div>
 
-            <div id="about-this-feature" className="border border-[oklch(0.308_0.034_127_/_0.18)] rounded-2xl p-8">
+            <div id="about-this-feature" className="border border-[oklch(0.236_0.047_306_/_0.18)] rounded-2xl p-8">
               <SectionLabel>About This Feature</SectionLabel>
               <p className="mt-6 text-muted-foreground leading-relaxed">
                 {f.featureCredit ?? "This editorial feature was independently researched, written, and published by the GrowthSpark Editorial Team as part of our commitment to highlighting books and authors whose work contributes meaningfully to today's literary landscape."}
@@ -1081,7 +1081,7 @@ function EditorialArticle() {
               <div className="mt-6 flex flex-wrap gap-3 print:hidden">
                 <button
                   onClick={() => window.print()}
-                  className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
+                  className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
                 >
                   <Printer size={14} /> Download This Article as PDF
                 </button>
@@ -1094,7 +1094,7 @@ function EditorialArticle() {
                     <Download size={14} /> Download Feature PDF
                   </a>
                 )}
-                <Link to="/editorial/featured-authors" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+                <Link to="/editorial/featured-authors" className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
                   More Editorial Features
                 </Link>
               </div>

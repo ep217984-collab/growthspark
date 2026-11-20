@@ -41,7 +41,7 @@ function Audit() {
 
   return (
     <>
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Complimentary Senior Audit
@@ -95,7 +95,7 @@ function Audit() {
               </div>
               <div className="md:col-span-2">
                 <label className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground" htmlFor="goal">What's your main goal right now?</label>
-                <textarea id="goal" name="goal" rows={4} className="mt-2 w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.04)] px-4 py-3 outline-none focus:border-gold transition resize-none" />
+                <textarea id="goal" name="goal" rows={4} className="mt-2 w-full rounded-lg border border-[oklch(0.236_0.047_306_/_0.2)] bg-[oklch(0.236_0.047_306_/_0.04)] px-4 py-3 outline-none focus:border-gold transition resize-none" />
               </div>
             </div>
             <button type="submit" className="w-full bg-gold text-primary-foreground rounded-full py-3.5 font-semibold text-sm tracking-wide hover:opacity-90 transition inline-flex items-center justify-center gap-2">
@@ -115,7 +115,7 @@ function Field({ label, name, type = "text", required }: { label: string; name: 
   return (
     <div>
       <label className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground" htmlFor={name}>{label}{required && " *"}</label>
-      <input id={name} name={name} type={type} required={required} className="mt-2 w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.04)] px-4 py-3 outline-none focus:border-gold transition" />
+      <input id={name} name={name} type={type} required={required} className="mt-2 w-full rounded-lg border border-[oklch(0.236_0.047_306_/_0.2)] bg-[oklch(0.236_0.047_306_/_0.04)] px-4 py-3 outline-none focus:border-gold transition" />
     </div>
   );
 }

@@ -147,7 +147,7 @@ function PodcastPage() {
           <p className="lede mt-6 max-w-2xl">
             Every author has a different voice, audience, and reason for writing. That is why we focus on relevant connections rather than sending generic pitches to as many podcasts as possible.
           </p>
-          <ol className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[oklch(0.308_0.034_127_/_0.14)] rounded-2xl overflow-hidden">
+          <ol className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[oklch(0.236_0.047_306_/_0.14)] rounded-2xl overflow-hidden">
             {steps.map((s, i) => (
               <li key={s.t} className="bg-background p-8">
                 <span className="font-serif text-5xl text-gold">{i + 1}</span>
@@ -220,7 +220,7 @@ function PodcastPage() {
               Your book should not be reduced to a generic promotional message. We believe podcast outreach should begin with understanding the author, recognizing the ideas behind the book, and finding the conversations where those ideas genuinely belong.
             </p>
           </div>
-          <div className="divide-y divide-[oklch(0.308_0.034_127_/_0.16)] border-y border-[oklch(0.308_0.034_127_/_0.16)]">
+          <div className="divide-y divide-[oklch(0.236_0.047_306_/_0.16)] border-y border-[oklch(0.236_0.047_306_/_0.16)]">
             {pillars.map((p) => (
               <div key={p.t} className="py-8">
                 <h3 className="font-serif text-2xl text-gold">{p.t}</h3>
@@ -238,7 +238,7 @@ function PodcastPage() {
           <h2 className="display-2 mt-6 max-w-3xl">Conversations for Authors With Something to Share.</h2>
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10">
             {audiences.map((a, i) => (
-              <div key={a} className="border-t border-[oklch(0.308_0.034_127_/_0.18)] py-6 flex gap-5">
+              <div key={a} className="border-t border-[oklch(0.236_0.047_306_/_0.18)] py-6 flex gap-5">
                 <span className="font-serif italic text-gold/70">{String(i + 1).padStart(2, "0")}</span>
                 <p className="font-serif text-xl leading-snug">{a}</p>
               </div>
@@ -270,7 +270,7 @@ function PodcastPage() {
           <Eyebrow>Frequently Asked Questions</Eyebrow>
           <Accordion type="single" collapsible className="mt-10">
             {faqs.map((f, i) => (
-              <AccordionItem key={f.q} value={`f${i}`} className="border-[oklch(0.308_0.034_127_/_0.16)]">
+              <AccordionItem key={f.q} value={`f${i}`} className="border-[oklch(0.236_0.047_306_/_0.16)]">
                 <AccordionTrigger className="font-serif text-xl text-left hover:no-underline hover:text-gold">{f.q}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed text-base">{f.a}</AccordionContent>
               </AccordionItem>

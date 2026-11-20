@@ -20,7 +20,7 @@ function EditorialLayout() {
   return (
     <div className="bg-background">
       {/* Editorial masthead */}
-      <div className="border-b border-[oklch(0.308_0.034_127_/_0.16)] bg-[var(--section-alt)]">
+      <div className="border-b border-[oklch(0.236_0.047_306_/_0.16)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-[1240px] px-6 py-6 flex items-center justify-between flex-wrap gap-4">
           <Link to="/editorial" className="flex items-baseline gap-3">
             <span className="font-serif text-2xl tracking-tight">GrowthSpark <span className="text-gold italic">Editorial</span></span>
@@ -30,7 +30,7 @@ function EditorialLayout() {
             Vol. 01 · {new Date().toLocaleString("en-US", { month: "long", year: "numeric" })}
           </span>
         </div>
-        <div className="border-t border-[oklch(0.308_0.034_127_/_0.14)]">
+        <div className="border-t border-[oklch(0.236_0.047_306_/_0.14)]">
           <div className="mx-auto max-w-[1240px] px-6">
             <nav className="flex gap-6 overflow-x-auto py-4 text-[12px] tracking-wide">
               {editorialNav.map((n) => (

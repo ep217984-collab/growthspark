@@ -31,7 +31,7 @@ const features = [
 function FeaturesHub() {
   return (
     <>
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Editorial Features

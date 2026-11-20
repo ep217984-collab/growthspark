@@ -54,7 +54,7 @@ function ProjectDetail() {
 
   return (
     <article className="pb-24">
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-20 pb-16">
           <div>
             <Link
@@ -89,7 +89,7 @@ function ProjectDetail() {
               {p.tags.map((t) => (
                 <span
                   key={t}
-                  className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground border border-[oklch(0.308_0.034_127_/_0.25)] rounded-full px-3 py-1.5"
+                  className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground border border-[oklch(0.236_0.047_306_/_0.25)] rounded-full px-3 py-1.5"
                 >
                   {t}
                 </span>
@@ -112,7 +112,7 @@ function ProjectDetail() {
                     href={p.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
+                    className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
                   >
                     <ExternalLink size={14} /> Open Full Screen
                   </a>
@@ -124,7 +124,7 @@ function ProjectDetail() {
                   href={l.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
+                  className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-6 py-3 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition"
                 >
                   <ExternalLink size={14} /> {l.label}
                 </a>
@@ -135,10 +135,10 @@ function ProjectDetail() {
       </section>
 
       {p.video && (
-        <section className="py-16 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+        <section className="py-16 border-b border-[oklch(0.236_0.047_306_/_0.14)]">
           <div className="mx-auto max-w-[1240px] px-6">
             <h2 className="font-serif text-3xl mb-6">Project Film</h2>
-            <div className="surface-card rounded-2xl overflow-hidden border border-[oklch(0.308_0.034_127_/_0.18)] shadow-2xl">
+            <div className="surface-card rounded-2xl overflow-hidden border border-[oklch(0.236_0.047_306_/_0.18)] shadow-2xl">
               <video
                 src={p.video}
                 controls
@@ -152,7 +152,7 @@ function ProjectDetail() {
       )}
 
       {p.pdf && (
-        <section className="py-16 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+        <section className="py-16 border-b border-[oklch(0.236_0.047_306_/_0.14)]">
           <div className="mx-auto max-w-[1240px] px-6">
             <h2 className="font-serif text-3xl mb-6">Document</h2>
             <PdfViewer src={p.pdf} title={p.title} />
@@ -161,7 +161,7 @@ function ProjectDetail() {
       )}
 
       {p.images && p.images.length > 0 && (
-        <section className="py-16 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+        <section className="py-16 border-b border-[oklch(0.236_0.047_306_/_0.14)]">
           <div className="mx-auto max-w-[1240px] px-6">
             <h2 className="font-serif text-3xl mb-6">Visuals</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -179,7 +179,7 @@ function ProjectDetail() {
       )}
 
       {(p.challenge || p.strategy || p.execution || p.learnings) && (
-        <section className="py-16 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+        <section className="py-16 border-b border-[oklch(0.236_0.047_306_/_0.14)]">
           <div className="mx-auto max-w-3xl px-6 space-y-10">
             {p.challenge && <Prose title="The Challenge" body={p.challenge} />}
             {p.strategy && <Prose title="Strategy" body={p.strategy} />}
@@ -199,7 +199,7 @@ function ProjectDetail() {
       </section>
 
       {related.length > 0 && (
-        <section className="py-16 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
+        <section className="py-16 border-t border-[oklch(0.236_0.047_306_/_0.14)]">
           <div className="mx-auto max-w-[1240px] px-6">
             <h2 className="font-serif text-3xl mb-8">Related Projects</h2>
             <div className="grid md:grid-cols-3 gap-6">
@@ -223,7 +223,7 @@ function ProjectDetail() {
         </section>
       )}
 
-      <section className="py-16 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
+      <section className="py-16 border-t border-[oklch(0.236_0.047_306_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           {p.redacted && (
             <p className="text-sm text-muted-foreground italic">

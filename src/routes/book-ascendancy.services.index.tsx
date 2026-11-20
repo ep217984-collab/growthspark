@@ -19,7 +19,7 @@ function BookAscendancyServices() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Book Ascendancy · Partner Services
@@ -67,7 +67,7 @@ function BookAscendancyServices() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
+      <section className="py-24 border-t border-[oklch(0.236_0.047_306_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Next Step</span>
           <h2 className="mt-4 font-serif text-4xl md:text-5xl leading-tight">
@@ -81,7 +81,7 @@ function BookAscendancyServices() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Start a Conversation <ArrowRight size={16} />
             </Link>
-            <Link to="/partnerships" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/partnerships" className="inline-flex items-center gap-2 border border-[oklch(0.236_0.047_306_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               All Partnerships
             </Link>
           </div>

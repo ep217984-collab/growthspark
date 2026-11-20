@@ -18,8 +18,8 @@ export function PdfViewer({ src, title }: { src: string; title: string }) {
   };
 
   return (
-    <div className="surface-card rounded-2xl overflow-hidden border border-[oklch(0.308_0.034_127_/_0.18)] shadow-2xl">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[oklch(0.308_0.034_127_/_0.16)] px-4 py-3 bg-[var(--section-alt)]">
+    <div className="surface-card rounded-2xl overflow-hidden border border-[oklch(0.236_0.047_306_/_0.18)] shadow-2xl">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[oklch(0.236_0.047_306_/_0.16)] px-4 py-3 bg-[var(--section-alt)]">
         <span className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground truncate max-w-[45%]">
           Document
         </span>
@@ -28,7 +28,7 @@ export function PdfViewer({ src, title }: { src: string; title: string }) {
             type="button"
             onClick={() => setZoom((z) => Math.max(60, z - 20))}
             aria-label="Zoom out"
-            className="p-2 rounded-full border border-[oklch(0.308_0.034_127_/_0.25)] hover:border-gold hover:text-gold transition"
+            className="p-2 rounded-full border border-[oklch(0.236_0.047_306_/_0.25)] hover:border-gold hover:text-gold transition"
           >
             <Minus size={14} />
           </button>
@@ -37,7 +37,7 @@ export function PdfViewer({ src, title }: { src: string; title: string }) {
             type="button"
             onClick={() => setZoom((z) => Math.min(200, z + 20))}
             aria-label="Zoom in"
-            className="p-2 rounded-full border border-[oklch(0.308_0.034_127_/_0.25)] hover:border-gold hover:text-gold transition"
+            className="p-2 rounded-full border border-[oklch(0.236_0.047_306_/_0.25)] hover:border-gold hover:text-gold transition"
           >
             <Plus size={14} />
           </button>
@@ -45,14 +45,14 @@ export function PdfViewer({ src, title }: { src: string; title: string }) {
             type="button"
             onClick={() => setZoom(100)}
             aria-label="Reset zoom"
-            className="p-2 rounded-full border border-[oklch(0.308_0.034_127_/_0.25)] hover:border-gold hover:text-gold transition"
+            className="p-2 rounded-full border border-[oklch(0.236_0.047_306_/_0.25)] hover:border-gold hover:text-gold transition"
           >
             <RotateCcw size={14} />
           </button>
           <button
             type="button"
             onClick={goFullScreen}
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-[oklch(0.308_0.034_127_/_0.25)] text-xs hover:border-gold hover:text-gold transition"
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-[oklch(0.236_0.047_306_/_0.25)] text-xs hover:border-gold hover:text-gold transition"
           >
             <Maximize2 size={13} /> Full screen
           </button>
@@ -60,7 +60,7 @@ export function PdfViewer({ src, title }: { src: string; title: string }) {
             href={src}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-[oklch(0.308_0.034_127_/_0.25)] text-xs hover:border-gold hover:text-gold transition"
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-[oklch(0.236_0.047_306_/_0.25)] text-xs hover:border-gold hover:text-gold transition"
           >
             <ExternalLink size={13} /> New tab
           </a>
@@ -85,7 +85,7 @@ export function PdfViewer({ src, title }: { src: string; title: string }) {
         </div>
       </div>
 
-      <div className="px-4 py-3 text-xs text-muted-foreground border-t border-[oklch(0.308_0.034_127_/_0.16)] md:hidden">
+      <div className="px-4 py-3 text-xs text-muted-foreground border-t border-[oklch(0.236_0.047_306_/_0.16)] md:hidden">
         On some mobile browsers inline PDFs are limited. Use Full screen, New tab, or Download to read the document.
       </div>
     </div>

@@ -24,7 +24,7 @@ function WhyWeFeature() {
 
   return (
     <>
-      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-20 pb-20">
           <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Editorial Philosophy</span>
           <h1 className="mt-6 font-serif text-5xl md:text-6xl leading-[1.05] max-w-4xl">
@@ -36,7 +36,7 @@ function WhyWeFeature() {
         </div>
       </section>
 
-      <section className="py-20 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+      <section className="py-20 border-b border-[oklch(0.236_0.047_306_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <span className="text-[11px] uppercase tracking-[0.28em] text-gold">How We Choose</span>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl leading-tight">Our editorial criteria.</h2>
@@ -51,7 +51,7 @@ function WhyWeFeature() {
         </div>
       </section>
 
-      <section className="py-20 border-b border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
+      <section className="py-20 border-b border-[oklch(0.236_0.047_306_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Quote className="mx-auto text-gold" size={32} />
           <blockquote className="mt-6 font-serif text-2xl md:text-3xl italic leading-tight">

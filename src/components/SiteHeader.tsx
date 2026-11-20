@@ -61,7 +61,7 @@ const nav: NavGroup[] = [
 function Wordmark() {
   return (
     <Link to="/" className="flex items-center gap-2.5 group" aria-label="GrowthSpark Impact home">
-      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[oklch(0.308_0.034_127_/_0.25)] bg-[oklch(0.308_0.034_127_/_0.05)] text-gold font-serif text-base">
+      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[oklch(0.236_0.047_306_/_0.25)] bg-[oklch(0.236_0.047_306_/_0.05)] text-gold font-serif text-base">
         G
       </span>
       <span className="leading-tight">
@@ -81,7 +81,7 @@ export function SiteHeader() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-xl border-b border-[oklch(0.308_0.034_127_/_0.14)]">
+    <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-xl border-b border-[oklch(0.236_0.047_306_/_0.14)]">
       <div className="mx-auto max-w-[1240px] px-6 h-20 flex items-center justify-between gap-4">
         <Wordmark />
 
@@ -98,12 +98,12 @@ export function SiteHeader() {
                   <ChevronDown size={13} className="opacity-60" />
                 </Link>
                 <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 absolute left-0 top-full pt-3 z-50">
-                  <div className="min-w-[230px] rounded-xl border border-[oklch(0.308_0.034_127_/_0.16)] bg-[var(--popover)] p-2 shadow-2xl">
+                  <div className="min-w-[230px] rounded-xl border border-[oklch(0.236_0.047_306_/_0.16)] bg-[var(--popover)] p-2 shadow-2xl">
                     {g.items.map((i) => (
                       <Link
                         key={i.to}
                         to={i.to}
-                        className="block rounded-lg px-3 py-2.5 text-[13px] text-foreground/75 hover:bg-[oklch(0.308_0.034_127_/_0.12)] hover:text-gold transition"
+                        className="block rounded-lg px-3 py-2.5 text-[13px] text-foreground/75 hover:bg-[oklch(0.236_0.047_306_/_0.12)] hover:text-gold transition"
                       >
                         {i.label}
                       </Link>
@@ -137,7 +137,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-background max-h-[calc(100vh-5rem)] overflow-y-auto">
+        <div className="lg:hidden border-t border-[oklch(0.236_0.047_306_/_0.14)] bg-background max-h-[calc(100vh-5rem)] overflow-y-auto">
           <nav className="flex flex-col p-4 gap-1">
             {nav.map((g) =>
               g.items ? (
@@ -151,7 +151,7 @@ export function SiteHeader() {
                     <ChevronDown size={15} className={expanded === g.label ? "rotate-180 transition" : "transition"} />
                   </button>
                   {expanded === g.label && (
-                    <div className="pl-4 border-l border-[oklch(0.308_0.034_127_/_0.16)] ml-4 mb-2">
+                    <div className="pl-4 border-l border-[oklch(0.236_0.047_306_/_0.16)] ml-4 mb-2">
                       {g.items.map((i) => (
                         <Link
                           key={i.to}
