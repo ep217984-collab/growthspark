@@ -77,7 +77,7 @@ const studies = [
 function CaseStudies() {
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Case Studies
@@ -110,7 +110,7 @@ Real engagements. <span className="text-gradient-gold italic">Honestly told.</sp
                 <Section label="Timeline" body={s.timeline} />
               </div>
 
-              <div className="mt-8 rounded-xl bg-[oklch(1_0_0_/_0.03)] border border-[oklch(1_0_0_/_0.06)] p-6">
+              <div className="mt-8 rounded-xl bg-[oklch(0.308_0.034_127_/_0.05)] border border-[oklch(0.308_0.034_127_/_0.14)] p-6">
                 <div className="text-[11px] uppercase tracking-[0.22em] text-gold">Outcomes</div>
                 <ul className="mt-3 grid sm:grid-cols-2 gap-x-8 gap-y-2">
                   {s.outcomes.map((o) => (
@@ -122,7 +122,7 @@ Real engagements. <span className="text-gradient-gold italic">Honestly told.</sp
                 </ul>
               </div>
 
-              <div className="mt-8 rounded-xl bg-[oklch(1_0_0_/_0.03)] border border-[oklch(1_0_0_/_0.06)] p-6">
+              <div className="mt-8 rounded-xl bg-[oklch(0.308_0.034_127_/_0.05)] border border-[oklch(0.308_0.034_127_/_0.14)] p-6">
                 <div className="text-[11px] uppercase tracking-[0.22em] text-gold">Key Learnings</div>
                 <p className="mt-2 text-muted-foreground leading-relaxed">{s.learnings}</p>
               </div>
@@ -131,14 +131,14 @@ Real engagements. <span className="text-gradient-gold italic">Honestly told.</sp
         </div>
       </section>
 
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl">Curious what we'd build for your book?</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Book a Discovery Call <ArrowRight size={16} />
             </Link>
-            <Link to="/audit" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/audit" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               Free Visibility Audit
             </Link>
           </div>

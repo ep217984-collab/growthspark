@@ -22,7 +22,7 @@ const categories = Array.from(new Set(projects.map((p) => p.category)));
 function ProofOfWork() {
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-24 pb-20">
           <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Proof of Work</span>
           <h1 className="mt-6 font-serif text-5xl md:text-7xl leading-[1.02] max-w-5xl">
@@ -33,7 +33,7 @@ function ProofOfWork() {
           </p>
           <div className="mt-10 flex flex-wrap gap-2">
             {categories.map((c) => (
-              <span key={c} className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground border border-[oklch(1_0_0_/_0.15)] rounded-full px-3 py-1.5">
+              <span key={c} className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground border border-[oklch(0.308_0.034_127_/_0.25)] rounded-full px-3 py-1.5">
                 {c}
               </span>
             ))}
@@ -69,7 +69,7 @@ function ProofOfWork() {
         </div>
       </section>
 
-      <section className="py-16 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-16 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <p className="text-sm text-muted-foreground italic">
             Certain project details have been modified or partially redacted to protect client confidentiality while accurately representing the scope of work delivered.

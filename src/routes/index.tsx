@@ -60,14 +60,6 @@ function SectionHeader({
 function Hero() {
   return (
     <section className="relative overflow-hidden hairline-b">
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.22] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(60% 60% at 15% 20%, oklch(0.74 0.108 82 / 0.35), transparent 60%), radial-gradient(50% 50% at 90% 90%, oklch(0.5 0.05 250 / 0.35), transparent 60%)",
-        }}
-      />
       <div className="container-editorial relative pt-32 md:pt-44 pb-24 md:pb-40">
         <Eyebrow gold>A boutique author growth consultancy</Eyebrow>
         <h1 className="mt-8 display-1 max-w-[18ch] fade-up">
@@ -179,7 +171,7 @@ function WhoWeHelp() {
 
 function Philosophy() {
   return (
-    <section className="section-pad hairline-t hairline-b bg-[oklch(0.18_0.012_250)]">
+    <section className="section-pad hairline-t hairline-b bg-[var(--section-alt)]">
       <div className="container-editorial grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
           <Eyebrow>Our philosophy</Eyebrow>
@@ -279,7 +271,7 @@ function FeaturedServices() {
     { to: "/services", name: "Launch Strategy", d: "A disciplined 90-day runway coordinating ads, email, ARC, and creator outreach." },
   ];
   return (
-    <section className="section-pad hairline-t bg-[oklch(0.17_0.012_250)]">
+    <section className="section-pad hairline-t bg-[var(--section-alt)]">
       <div className="container-editorial">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeader
@@ -325,12 +317,7 @@ function RealClientWork() {
         <div className="mt-14 grid md:grid-cols-2 gap-6">
           {items.map((i) => (
             <Link key={i.t} to="/portfolio" className="group block">
-              <div className="aspect-[16/10] rounded-2xl border border-[oklch(1_0_0_/_0.08)] bg-[oklch(0.2_0.012_250)] overflow-hidden relative">
-                <div
-                  aria-hidden
-                  className="absolute inset-0 opacity-40"
-                  style={{ background: "radial-gradient(60% 60% at 30% 30%, oklch(0.74 0.108 82 / 0.25), transparent 60%)" }}
-                />
+              <div className="aspect-[16/10] rounded-2xl border border-[oklch(0.308_0.034_127_/_0.16)] bg-[var(--section-alt)] overflow-hidden relative">
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="text-[10px] uppercase tracking-[0.28em] text-gold">{i.cat}</div>
                   <div className="mt-2 font-serif text-2xl">{i.t}</div>
@@ -346,7 +333,7 @@ function RealClientWork() {
 
 function CaseStudyHighlights() {
   return (
-    <section className="section-pad hairline-t bg-[oklch(0.18_0.012_250)]">
+    <section className="section-pad hairline-t bg-[var(--section-alt)]">
       <div className="container-editorial grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <SectionHeader
@@ -404,10 +391,7 @@ function LeadershipTeaser() {
             <div key={n} className="surface-card rounded-2xl p-7">
               <div
                 className="aspect-square rounded-xl mb-6"
-                style={{
-                  background:
-                    "linear-gradient(135deg, oklch(0.28 0.02 250), oklch(0.22 0.015 260)), radial-gradient(60% 60% at 30% 30%, oklch(0.74 0.108 82 / 0.15), transparent)",
-                }}
+                style={{ background: "var(--section-alt)" }}
                 aria-hidden
               />
               <div className="font-serif text-xl">{n}</div>
@@ -422,7 +406,7 @@ function LeadershipTeaser() {
 
 function Partnerships() {
   return (
-    <section className="section-pad hairline-t bg-[oklch(0.17_0.012_250)]">
+    <section className="section-pad hairline-t bg-[var(--section-alt)]">
       <div className="container-editorial grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5">
           <SectionHeader
@@ -487,7 +471,7 @@ function Insights() {
 
 function Testimonials() {
   return (
-    <section className="section-pad hairline-t bg-[oklch(0.18_0.012_250)]">
+    <section className="section-pad hairline-t bg-[var(--section-alt)]">
       <div className="container-editorial">
         <Eyebrow>In their words</Eyebrow>
         <div className="mt-10 grid md:grid-cols-2 gap-10">
@@ -558,7 +542,7 @@ function Resources() {
 
 function FinalCTA() {
   return (
-    <section className="section-pad-lg hairline-t bg-[oklch(0.15_0.012_250)]">
+    <section className="section-pad-lg hairline-t bg-[var(--section-alt)]">
       <div className="container-editorial text-center">
         <Eyebrow gold>Begin the conversation</Eyebrow>
         <h2 className="mt-8 display-1 max-w-[16ch] mx-auto">

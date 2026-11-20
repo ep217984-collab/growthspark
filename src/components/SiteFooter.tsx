@@ -56,7 +56,7 @@ const groups: { heading: string; links: FooterLink[] }[] = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.14_0.012_250)] text-foreground/75 mt-24">
+    <footer className="border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)] text-foreground/75 mt-24">
       <div className="mx-auto max-w-[1240px] px-6 py-20 grid gap-12 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <div className="font-serif text-2xl">
@@ -112,7 +112,7 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="border-t border-[oklch(1_0_0_/_0.06)]">
+      <div className="border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 py-6 text-xs text-muted-foreground flex flex-wrap justify-between gap-3">
           <span>© 2025 GrowthSpark Impact. All rights reserved.</span>
           <div className="flex flex-wrap gap-x-5 gap-y-2">

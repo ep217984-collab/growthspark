@@ -20,7 +20,7 @@ function EditorialHome() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-20 pb-24">
           <span className="text-[11px] uppercase tracking-[0.32em] text-gold">The Editorial</span>
           <h1 className="mt-6 font-serif text-5xl md:text-7xl leading-[1.02] max-w-5xl">
@@ -33,7 +33,7 @@ function EditorialHome() {
             <Link to="/editorial/featured-authors" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Browse Featured Authors <ArrowRight size={16} />
             </Link>
-            <Link to="/editorial/why-we-feature" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/editorial/why-we-feature" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               Our Editorial Philosophy
             </Link>
           </div>
@@ -41,7 +41,7 @@ function EditorialHome() {
       </section>
 
       {/* FEATURED AUTHOR OF THE MONTH */}
-      <section className="py-24 border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Featured Author of the Month
@@ -80,7 +80,7 @@ function EditorialHome() {
       </section>
 
       {/* SECTION GRID */}
-      <section className="py-24 border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="max-w-2xl">
             <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Explore the Publication</span>
@@ -111,7 +111,7 @@ function EditorialHome() {
       </section>
 
       {/* EDITORIAL PROMISE */}
-      <section className="py-24 border-b border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-b border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Quote className="mx-auto text-gold" size={32} />
           <blockquote className="mt-6 font-serif text-3xl md:text-4xl italic leading-tight">

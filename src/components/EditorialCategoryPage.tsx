@@ -18,7 +18,7 @@ export function EditorialCategoryPage({
 }) {
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-20 pb-16">
           <span className="text-[11px] uppercase tracking-[0.28em] text-gold">{kicker}</span>
           <h1 className="mt-6 font-serif text-5xl md:text-6xl leading-[1.05] max-w-4xl">{title}</h1>
@@ -26,7 +26,7 @@ export function EditorialCategoryPage({
         </div>
       </section>
 
-      <section className="py-20 border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-20 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 grid md:grid-cols-2 gap-6">
           {sections.map((s) => (
             <div key={s.heading} className="surface-card rounded-2xl p-7">
@@ -39,7 +39,7 @@ export function EditorialCategoryPage({
       </section>
 
       {footnote && (
-        <section className="py-16 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-16 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <div className="mx-auto max-w-3xl px-6 text-center text-sm text-muted-foreground leading-relaxed italic">
             {footnote}
           </div>

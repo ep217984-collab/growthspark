@@ -38,7 +38,7 @@ function Contact() {
 
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Contact The Studio
@@ -65,7 +65,7 @@ function Contact() {
               {emails.map((e) => (
                 <a key={e.value} href={`mailto:${e.value}`} className="block surface-card rounded-2xl p-5 hover:border-gold/40 transition">
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[oklch(1_0_0_/_0.03)] border border-[oklch(1_0_0_/_0.1)] flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-lg bg-[oklch(0.308_0.034_127_/_0.05)] border border-[oklch(0.308_0.034_127_/_0.18)] flex items-center justify-center">
                       <Mail size={16} className="text-gold" />
                     </div>
                     <div>
@@ -107,11 +107,11 @@ function Contact() {
             </div>
             <div>
               <label className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground" htmlFor="subject">Subject</label>
-              <input id="subject" name="subject" defaultValue="Discovery inquiry" className="mt-2 w-full rounded-lg border border-[oklch(1_0_0_/_0.12)] bg-[oklch(1_0_0_/_0.02)] px-4 py-3 outline-none focus:border-gold transition" />
+              <input id="subject" name="subject" defaultValue="Discovery inquiry" className="mt-2 w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.04)] px-4 py-3 outline-none focus:border-gold transition" />
             </div>
             <div>
               <label className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground" htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows={5} required className="mt-2 w-full rounded-lg border border-[oklch(1_0_0_/_0.12)] bg-[oklch(1_0_0_/_0.02)] px-4 py-3 outline-none focus:border-gold transition resize-none" />
+              <textarea id="message" name="message" rows={5} required className="mt-2 w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.04)] px-4 py-3 outline-none focus:border-gold transition resize-none" />
             </div>
             <Button type="submit" className="h-auto w-full bg-gold text-primary-foreground rounded-full py-3.5 font-semibold text-sm tracking-wide hover:opacity-90 transition">
               {sent ? "Opening your email…" : "Send Inquiry"}
@@ -128,7 +128,7 @@ function Field({ label, name, type = "text", required, placeholder }: { label: s
   return (
     <div>
       <label className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground" htmlFor={name}>{label}{required && " *"}</label>
-      <input id={name} name={name} type={type} required={required} placeholder={placeholder} className="mt-2 w-full rounded-lg border border-[oklch(1_0_0_/_0.12)] bg-[oklch(1_0_0_/_0.02)] px-4 py-3 outline-none focus:border-gold transition" />
+      <input id={name} name={name} type={type} required={required} placeholder={placeholder} className="mt-2 w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.04)] px-4 py-3 outline-none focus:border-gold transition" />
     </div>
   );
 }

@@ -297,7 +297,7 @@ function LeadershipPage() {
         </div>
       </section>
 
-      <section className="section-pad hairline-t bg-[oklch(0.18_0.012_250)]">
+      <section className="section-pad hairline-t bg-[var(--section-alt)]">
         <div className="container-editorial text-center">
           <div className="eyebrow-gold justify-center"><span className="rule-gold" />Work with us</div>
           <h2 className="mt-6 display-2 max-w-3xl mx-auto">

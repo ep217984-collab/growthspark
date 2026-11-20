@@ -124,7 +124,7 @@ const features = [
 function FeaturedAuthors() {
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-20 pb-16">
           <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Featured Authors</span>
           <h1 className="mt-6 font-serif text-5xl md:text-6xl leading-[1.05] max-w-4xl">
@@ -145,7 +145,7 @@ function FeaturedAuthors() {
               params={{ slug: f.slug }}
               className="group surface-card rounded-2xl overflow-hidden flex flex-col hover:-translate-y-1 hover:border-gold/40 transition"
             >
-              <div className="aspect-[3/4] bg-[oklch(0.18_0.012_250)] overflow-hidden">
+              <div className="aspect-[3/4] bg-[var(--section-alt)] overflow-hidden">
                 <img
                   src={f.cover}
                   alt={`${f.title} by ${f.author} — book cover`}

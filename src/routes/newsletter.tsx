@@ -36,7 +36,7 @@ function Newsletter() {
 
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> The Spark · Private Newsletter
@@ -59,7 +59,7 @@ function Newsletter() {
             <div className="mt-10 space-y-6">
               {perks.map(({ Icon, title, body }) => (
                 <div key={title} className="flex gap-4">
-                  <div className="w-11 h-11 shrink-0 rounded-lg bg-[oklch(1_0_0_/_0.03)] border border-[oklch(1_0_0_/_0.1)] flex items-center justify-center">
+                  <div className="w-11 h-11 shrink-0 rounded-lg bg-[oklch(0.308_0.034_127_/_0.05)] border border-[oklch(0.308_0.034_127_/_0.18)] flex items-center justify-center">
                     <Icon className="text-gold" size={18} />
                   </div>
                   <div>
@@ -73,7 +73,7 @@ function Newsletter() {
 
           <form onSubmit={onSubmit} className="surface-card rounded-2xl p-8 space-y-5">
             <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-lg bg-[oklch(1_0_0_/_0.03)] border border-[oklch(1_0_0_/_0.1)] flex items-center justify-center">
+              <div className="w-11 h-11 rounded-lg bg-[oklch(0.308_0.034_127_/_0.05)] border border-[oklch(0.308_0.034_127_/_0.18)] flex items-center justify-center">
                 <Mail className="text-gold" size={18} />
               </div>
               <div>
@@ -83,11 +83,11 @@ function Newsletter() {
             </div>
             <div>
               <label className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground" htmlFor="nl-name">Your Name</label>
-              <input id="nl-name" required maxLength={100} value={name} onChange={(e) => setName(e.target.value)} className="mt-2 w-full rounded-lg border border-[oklch(1_0_0_/_0.12)] bg-[oklch(1_0_0_/_0.02)] px-4 py-3 outline-none focus:border-gold transition" />
+              <input id="nl-name" required maxLength={100} value={name} onChange={(e) => setName(e.target.value)} className="mt-2 w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.04)] px-4 py-3 outline-none focus:border-gold transition" />
             </div>
             <div>
               <label className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground" htmlFor="nl-email">Email Address</label>
-              <input id="nl-email" type="email" required maxLength={255} value={email} onChange={(e) => setEmail(e.target.value)} className="mt-2 w-full rounded-lg border border-[oklch(1_0_0_/_0.12)] bg-[oklch(1_0_0_/_0.02)] px-4 py-3 outline-none focus:border-gold transition" />
+              <input id="nl-email" type="email" required maxLength={255} value={email} onChange={(e) => setEmail(e.target.value)} className="mt-2 w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.04)] px-4 py-3 outline-none focus:border-gold transition" />
             </div>
             <button type="submit" className="w-full bg-gold text-primary-foreground rounded-full py-3.5 font-semibold text-sm tracking-wide hover:opacity-90 transition">
               {sent ? "Opening your email…" : "Sign Me Up"}

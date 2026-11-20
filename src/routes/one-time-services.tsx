@@ -385,7 +385,7 @@ function OneTimeServices() {
   return (
     <>
       {/* Hero */}
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="container-editorial pt-24 pb-20">
           <span className="eyebrow-gold">
             <span className="rule-gold" /> One Time Services
@@ -412,7 +412,7 @@ function OneTimeServices() {
       </section>
 
       {/* Positioning */}
-      <section className="section-pad border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="section-pad border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="container-editorial grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5">
             <span className="eyebrow">
@@ -436,7 +436,7 @@ function OneTimeServices() {
       </section>
 
       {/* One time vs ongoing */}
-      <section className="section-pad border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="section-pad border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="container-editorial">
           <span className="eyebrow-gold">
             <span className="rule-gold" /> How To Choose
@@ -484,7 +484,7 @@ function OneTimeServices() {
         {categories.map((cat) => (
           <section
             key={cat.title}
-            className="section-pad border-b border-[oklch(1_0_0_/_0.06)]"
+            className="section-pad border-b border-[oklch(0.308_0.034_127_/_0.14)]"
           >
             <div className="container-editorial">
               <div className="grid md:grid-cols-12 gap-12 items-end mb-16">
@@ -503,10 +503,10 @@ function OneTimeServices() {
                   return (
                     <article
                       key={s.name}
-                      className="surface-card rounded-2xl p-8 lift hover:border-[oklch(0.74_0.108_82_/_0.4)]"
+                      className="surface-card rounded-2xl p-8 lift hover:border-clay"
                     >
                       <div className="flex items-start justify-between gap-6">
-                        <div className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-[oklch(1_0_0_/_0.1)] bg-[oklch(1_0_0_/_0.03)] text-gold">
+                        <div className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-[oklch(0.308_0.034_127_/_0.18)] bg-[oklch(0.308_0.034_127_/_0.05)] text-gold">
                           <Icon size={20} />
                         </div>
                         <span className="text-[11px] uppercase tracking-[0.22em] text-gold whitespace-nowrap">
@@ -538,7 +538,7 @@ function OneTimeServices() {
                           </ul>
                         </>
                       )}
-                      <div className="mt-8 pt-6 border-t border-[oklch(1_0_0_/_0.06)]">
+                      <div className="mt-8 pt-6 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
                         <Link
                           to="/contact"
                           className="inline-flex items-center gap-2 text-gold text-[12px] uppercase tracking-[0.2em] font-semibold hover:gap-3 transition-all"
@@ -556,7 +556,7 @@ function OneTimeServices() {
       </div>
 
       {/* Bundles */}
-      <section className="section-pad border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="section-pad border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="container-editorial">
           <div className="grid md:grid-cols-12 gap-12 items-end mb-16">
             <div className="md:col-span-6">
@@ -607,7 +607,7 @@ function OneTimeServices() {
       </section>
 
       {/* Client journey */}
-      <section className="section-pad border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="section-pad border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="container-editorial">
           <div className="max-w-3xl">
             <span className="eyebrow-gold">

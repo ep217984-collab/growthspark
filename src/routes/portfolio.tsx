@@ -217,8 +217,8 @@ const projects: Project[] = [
 
 function VisualPlaceholder({ kind, label }: Project["visual"]) {
   return (
-    <div className="aspect-[16/9] w-full rounded-xl border border-[oklch(1_0_0_/_0.08)] bg-[oklch(0.2_0.012_250)] flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_30%_30%,oklch(0.74_0.108_82_/_0.25),transparent_60%)]" />
+    <div className="aspect-[16/9] w-full rounded-xl border border-[oklch(0.308_0.034_127_/_0.16)] bg-[var(--section-alt)] flex items-center justify-center relative overflow-hidden">
+      <div className="absolute inset-0 bg-[oklch(0.693_0.081_34_/_0.12)]" />
       <div className="relative text-center">
         <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80">{kind}</div>
         <div className="mt-2 font-serif text-2xl text-foreground/80">{label}</div>
@@ -231,7 +231,7 @@ function VisualPlaceholder({ kind, label }: Project["visual"]) {
 function Portfolio() {
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Real Client Work
@@ -321,7 +321,7 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl">Want to see what we'd build for your book?</h2>
           <p className="mt-4 text-muted-foreground text-lg">Start with a discovery call or a free visibility audit.</p>
@@ -329,7 +329,7 @@ function Portfolio() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Book a Discovery Call <ArrowRight size={16} />
             </Link>
-            <Link to="/audit" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/audit" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               Free Visibility Audit
             </Link>
           </div>

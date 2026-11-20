@@ -205,7 +205,7 @@ function FrameworkPage() {
         </div>
       </section>
 
-      <section className="section-pad hairline-t bg-[oklch(0.18_0.012_250)]">
+      <section className="section-pad hairline-t bg-[var(--section-alt)]">
         <div className="container-editorial">
           <div className="eyebrow"><span className="rule-gold" />Related frameworks</div>
           <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-4">

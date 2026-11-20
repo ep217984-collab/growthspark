@@ -21,7 +21,7 @@ function About() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> The Studio
@@ -42,7 +42,7 @@ function About() {
       <section className="py-24">
         <div className="mx-auto max-w-[1140px] px-6 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <div className="surface-card rounded-2xl p-10 border border-[oklch(1_0_0_/_0.07)]">
+            <div className="surface-card rounded-2xl p-10 border border-[oklch(0.308_0.034_127_/_0.15)]">
               <div className="text-[11px] uppercase tracking-[0.28em] text-gold">Founder</div>
               <div className="mt-4 font-serif text-3xl leading-tight">Emmanuel Promise</div>
               <div className="mt-2 text-sm text-muted-foreground">Founder & Lead Growth Strategist</div>
@@ -81,7 +81,7 @@ function About() {
       </section>
 
       {/* MISSION / VISION / VALUES */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="max-w-2xl">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">What Drives Us</span>
@@ -106,7 +106,7 @@ function About() {
       </section>
 
       {/* TEAM / DIVISIONS */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="max-w-3xl">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">{teamIntro.eyebrow}</span>
@@ -120,7 +120,7 @@ function About() {
             {team.map((m) => (
               <article
                 key={m.name}
-                className="surface-card rounded-2xl p-8 flex flex-col border border-[oklch(1_0_0_/_0.07)] hover:border-gold/40 transition-colors"
+                className="surface-card rounded-2xl p-8 flex flex-col border border-[oklch(0.308_0.034_127_/_0.15)] hover:border-gold/40 transition-colors"
               >
                 <div className="text-[10px] uppercase tracking-[0.22em] text-gold">{m.division}</div>
                 <h3 className="mt-4 font-serif text-2xl leading-tight">{m.name}</h3>
@@ -136,7 +136,7 @@ function About() {
       </section>
 
       {/* MORE THAN A MARKETING AGENCY */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1140px] px-6 grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Beyond Marketing</span>
@@ -167,7 +167,7 @@ function About() {
       </section>
 
       {/* COMMITMENT / CTA */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Our Commitment</span>
           <h2 className="mt-4 font-serif text-4xl md:text-5xl leading-tight">
@@ -180,7 +180,7 @@ function About() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Start a Conversation <ArrowRight size={16} />
             </Link>
-            <Link to="/services" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/services" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               View Services
             </Link>
           </div>

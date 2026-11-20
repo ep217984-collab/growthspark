@@ -28,7 +28,7 @@ const items = [
 function Testimonials() {
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> In Their Words
@@ -50,7 +50,7 @@ function Testimonials() {
               <figure key={t.who} className="surface-card rounded-2xl p-8">
                 <Quote className="text-gold" size={20} />
                 <blockquote className="mt-4 leading-relaxed text-foreground/90 text-[15px]">"{t.quote}"</blockquote>
-                <figcaption className="mt-6 pt-6 border-t border-[oklch(1_0_0_/_0.08)] text-[11px] uppercase tracking-[0.22em] text-gold">{t.who}</figcaption>
+                <figcaption className="mt-6 pt-6 border-t border-[oklch(0.308_0.034_127_/_0.16)] text-[11px] uppercase tracking-[0.22em] text-gold">{t.who}</figcaption>
               </figure>
             ))}
           </div>

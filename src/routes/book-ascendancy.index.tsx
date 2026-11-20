@@ -18,7 +18,7 @@ function BookAscendancy() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Featured Literary Partner
@@ -36,7 +36,7 @@ function BookAscendancy() {
             <Link to="/book-ascendancy/services" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Explore Partner Services <ArrowRight size={16} />
             </Link>
-            <Link to="/partnerships" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/partnerships" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               Back to Partnerships
             </Link>
           </div>
@@ -77,7 +77,7 @@ function BookAscendancy() {
       </section>
 
       {/* WHAT IT OFFERS */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="max-w-2xl">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Programs & Experiences</span>
@@ -108,7 +108,7 @@ function BookAscendancy() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Get Involved</span>
           <h2 className="mt-4 font-serif text-4xl md:text-5xl leading-tight">
@@ -122,7 +122,7 @@ function BookAscendancy() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Start a Conversation <ArrowRight size={16} />
             </Link>
-            <Link to="/book-ascendancy/services" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
+            <Link to="/book-ascendancy/services" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm hover:border-gold hover:text-gold transition">
               Explore Services
             </Link>
           </div>

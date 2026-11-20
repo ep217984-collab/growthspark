@@ -65,7 +65,7 @@ function ServiceDetail() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1000px] px-6 pt-28 pb-16">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Core Growth Service
@@ -85,14 +85,14 @@ function ServiceDetail() {
 
       <div className="mx-auto max-w-[1000px] px-6">
         {/* OVERVIEW */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Overview</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">What it is.</h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">{service.whatItIs}</p>
         </section>
 
         {/* WHO IT'S FOR */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Who It's For</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">Built for authors like you.</h2>
           <ul className="mt-6 grid sm:grid-cols-2 gap-4">
@@ -106,21 +106,21 @@ function ServiceDetail() {
         </section>
 
         {/* CHALLENGE */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">The Challenge</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">Why this happens.</h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">{service.challenge}</p>
         </section>
 
         {/* APPROACH */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Our Approach</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">How we work.</h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">{service.approach}</p>
         </section>
 
         {/* PROCESS */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Process</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">Step by step.</h2>
           <ol className="mt-8 space-y-4">
@@ -134,7 +134,7 @@ function ServiceDetail() {
         </section>
 
         {/* DELIVERABLES */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Deliverables</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">What you receive.</h2>
           <ul className="mt-8 grid sm:grid-cols-2 gap-3">
@@ -149,7 +149,7 @@ function ServiceDetail() {
 
         {/* EXAMPLE WORK */}
         {service.exampleWork && (
-          <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+          <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Example Work</span>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl">See it in practice.</h2>
             <p className="mt-5 text-muted-foreground text-lg leading-relaxed">{service.exampleWork}</p>
@@ -157,7 +157,7 @@ function ServiceDetail() {
         )}
 
         {/* OUTCOMES */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Expected Outcomes</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">What changes.</h2>
           <ul className="mt-8 space-y-3">
@@ -171,7 +171,7 @@ function ServiceDetail() {
         </section>
 
         {/* WHY IT MATTERS */}
-        <section className="py-14 border-b border-[oklch(1_0_0_/_0.06)]">
+        <section className="py-14 border-b border-[oklch(0.308_0.034_127_/_0.14)]">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Why It Matters</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">The bigger picture.</h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">{service.whyItMatters}</p>
@@ -183,7 +183,7 @@ function ServiceDetail() {
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">Common questions.</h2>
           <Accordion type="single" collapsible className="mt-8">
             {service.faqs.map((f, idx) => (
-              <AccordionItem key={f.q} value={`faq-${idx}`} className="border-[oklch(1_0_0_/_0.1)]">
+              <AccordionItem key={f.q} value={`faq-${idx}`} className="border-[oklch(0.308_0.034_127_/_0.18)]">
                 <AccordionTrigger className="text-left font-serif text-lg">{f.q}</AccordionTrigger>
                 <AccordionContent>
                   <p className="text-muted-foreground leading-relaxed">{f.a}</p>
@@ -195,7 +195,7 @@ function ServiceDetail() {
       </div>
 
       {/* CTA */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl">Ready to start with {service.name}?</h2>
           <p className="mt-4 text-muted-foreground text-lg">
@@ -205,7 +205,7 @@ function ServiceDetail() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Book a Discovery Call <ArrowRight size={16} />
             </Link>
-            <Link to="/one-time-services" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm tracking-wide hover:border-gold hover:text-gold transition">
+            <Link to="/one-time-services" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm tracking-wide hover:border-gold hover:text-gold transition">
               One-Time Services
             </Link>
           </div>
@@ -213,7 +213,7 @@ function ServiceDetail() {
       </section>
 
       {/* RELATED SERVICES */}
-      <section className="py-16 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-16 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1000px] px-6">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Related Services</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">Often paired with this.</h2>
@@ -238,7 +238,7 @@ function ServiceDetail() {
 
       {/* PREV / NEXT */}
 
-      <section className="py-10 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-10 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1000px] px-6 flex flex-col sm:flex-row justify-between gap-4">
           <Link
             to="/services/$slug"

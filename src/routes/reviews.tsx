@@ -53,7 +53,7 @@ type PublicReview = {
 };
 
 const inputClass =
-  "w-full rounded-lg border border-[oklch(1_0_0_/_0.12)] bg-[oklch(1_0_0_/_0.03)] px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 outline-none focus:border-gold/70 transition";
+  "w-full rounded-lg border border-[oklch(0.308_0.034_127_/_0.2)] bg-[oklch(0.308_0.034_127_/_0.05)] px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 outline-none focus:border-gold/70 transition";
 
 function Stars({ value }: { value: number }) {
   return (
@@ -144,7 +144,7 @@ function Reviews() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Client Reviews
@@ -210,7 +210,7 @@ function Reviews() {
                     <p className="mt-3 text-sm text-muted-foreground leading-relaxed flex-1">
                       {r.review_body}
                     </p>
-                    <div className="mt-6 pt-5 border-t border-[oklch(1_0_0_/_0.08)]">
+                    <div className="mt-6 pt-5 border-t border-[oklch(0.308_0.034_127_/_0.16)]">
                       <div className="text-sm text-foreground">{r.author_name || "Verified Client"}</div>
                       {r.book_title && (
                         <div className="text-xs text-muted-foreground italic mt-0.5">{r.book_title}</div>
@@ -230,7 +230,7 @@ function Reviews() {
       {/* FORM */}
       <section
         id="leave-a-review"
-        className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)] scroll-mt-24"
+        className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)] scroll-mt-24"
       >
         <div className="mx-auto max-w-[820px] px-6">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Leave a Review</span>
@@ -297,7 +297,7 @@ function Reviews() {
                     Select a service
                   </option>
                   {services.map((s) => (
-                    <option key={s} value={s} className="bg-[oklch(0.18_0.012_250)]">
+                    <option key={s} value={s} className="bg-[var(--section-alt)]">
                       {s}
                     </option>
                   ))}
@@ -314,7 +314,7 @@ function Reviews() {
                       onClick={() => setRating(n)}
                       aria-label={`${n} star${n > 1 ? "s" : ""}`}
                       aria-pressed={rating === n}
-                      className="p-1.5 rounded-md hover:bg-[oklch(1_0_0_/_0.05)] transition"
+                      className="p-1.5 rounded-md hover:bg-[oklch(0.308_0.034_127_/_0.12)] transition"
                     >
                       <Star size={24} className={n <= rating ? "fill-gold text-gold" : "text-muted-foreground/50"} />
                     </button>
@@ -350,11 +350,11 @@ function Reviews() {
 
               <div className="space-y-3 text-sm text-muted-foreground">
                 <label className="flex gap-3 items-start cursor-pointer">
-                  <input type="checkbox" name="permission_to_display" required className="mt-1 accent-[#C8A24A]" />
+                  <input type="checkbox" name="permission_to_display" required className="mt-1 accent-[var(--gold)]" />
                   <span>I give GrowthSpark Impact permission to display my review on its website.</span>
                 </label>
                 <label className="flex gap-3 items-start cursor-pointer">
-                  <input type="checkbox" name="genuine_experience" required className="mt-1 accent-[#C8A24A]" />
+                  <input type="checkbox" name="genuine_experience" required className="mt-1 accent-[var(--gold)]" />
                   <span>I confirm that this review reflects my genuine experience.</span>
                 </label>
               </div>

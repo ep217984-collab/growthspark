@@ -146,7 +146,7 @@ function Services() {
   return (
     <>
       {/* HERO */}
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Services & Engagements
@@ -189,7 +189,7 @@ function Services() {
                 <p className="mt-4 text-muted-foreground leading-relaxed">{s.summary}</p>
 
                 <Accordion type="single" collapsible className="mt-6">
-                  <AccordionItem value="deliverables" className="border-[oklch(1_0_0_/_0.1)]">
+                  <AccordionItem value="deliverables" className="border-[oklch(0.308_0.034_127_/_0.18)]">
                     <AccordionTrigger className="text-[11px] uppercase tracking-[0.22em] text-foreground/80">
                       Deliverables
                     </AccordionTrigger>
@@ -204,7 +204,7 @@ function Services() {
                       </ul>
                     </AccordionContent>
                   </AccordionItem>
-                  <AccordionItem value="process" className="border-[oklch(1_0_0_/_0.1)]">
+                  <AccordionItem value="process" className="border-[oklch(0.308_0.034_127_/_0.18)]">
                     <AccordionTrigger className="text-[11px] uppercase tracking-[0.22em] text-foreground/80">
                       Process Overview
                     </AccordionTrigger>
@@ -247,7 +247,7 @@ function Services() {
       </section>
 
       {/* THE GROWTHSPARK METHOD */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="max-w-3xl">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Proprietary Frameworks</span>
@@ -271,7 +271,7 @@ function Services() {
       </section>
 
       {/* CLIENT JOURNEY */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="max-w-2xl">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">The Client Journey</span>
@@ -290,7 +290,7 @@ function Services() {
       </section>
 
       {/* PRICING */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="text-center max-w-2xl mx-auto">
             <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Engagement Tiers</span>
@@ -304,7 +304,7 @@ function Services() {
               <div
                 key={p.name}
                 className={`relative surface-card rounded-2xl p-7 flex flex-col ${
-                  p.popular ? "border-gold/70 ring-1 ring-gold/30 shadow-[0_0_60px_-20px_oklch(0.74_0.108_82_/_0.4)]" : ""
+                  p.popular ? "border-gold/70 ring-1 ring-gold/30 shadow-[0_18px_40px_-24px_oklch(0.308_0.034_127_/_0.35)]" : ""
                 } ${p.anchor ? "opacity-95" : ""}`}
               >
                 {p.popular && (
@@ -333,7 +333,7 @@ function Services() {
                   className={`mt-7 block text-center rounded-full px-5 py-3 text-sm font-semibold tracking-wide transition ${
                     p.popular
                       ? "bg-gold text-primary-foreground hover:opacity-90"
-                      : "border border-[oklch(1_0_0_/_0.18)] text-foreground hover:border-gold hover:text-gold"
+                      : "border border-[oklch(0.308_0.034_127_/_0.3)] text-foreground hover:border-gold hover:text-gold"
                   }`}
                 >
                   {p.anchor ? "Apply for Legacy" : "Get Started"}
@@ -348,7 +348,7 @@ function Services() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-3xl px-6">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Common Questions</span>
           <h2 className="mt-4 font-serif text-4xl md:text-5xl">Frequently asked.</h2>
@@ -367,7 +367,7 @@ function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl">Not sure which service fits your book?</h2>
           <p className="mt-4 text-muted-foreground text-lg">
@@ -377,7 +377,7 @@ function Services() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:opacity-90 transition">
               Book a Discovery Call <ArrowRight size={16} />
             </Link>
-            <Link to="/audit" className="inline-flex items-center gap-2 border border-[oklch(1_0_0_/_0.18)] px-7 py-3.5 rounded-full font-medium text-sm tracking-wide hover:border-gold hover:text-gold transition">
+            <Link to="/audit" className="inline-flex items-center gap-2 border border-[oklch(0.308_0.034_127_/_0.3)] px-7 py-3.5 rounded-full font-medium text-sm tracking-wide hover:border-gold hover:text-gold transition">
               Free Visibility Audit
             </Link>
           </div>

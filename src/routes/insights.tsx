@@ -63,7 +63,7 @@ const recommendedVideos = [
 function Insights() {
   return (
     <>
-      <section className="border-b border-[oklch(1_0_0_/_0.06)]">
+      <section className="border-b border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6 pt-28 pb-20">
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="h-px w-10 bg-gold/60" /> Insights
@@ -96,7 +96,7 @@ function Insights() {
         </div>
       </section>
 
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)] bg-[oklch(0.18_0.012_250)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)] bg-[var(--section-alt)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
@@ -110,7 +110,7 @@ function Insights() {
               <article key={a.title} className="surface-card rounded-2xl p-7 flex flex-col">
                 <span className="text-[11px] uppercase tracking-[0.22em] text-gold">{a.cat}</span>
                 <h3 className="mt-3 font-serif text-xl leading-snug flex-1">{a.title}</h3>
-                <div className="mt-6 pt-5 border-t border-[oklch(1_0_0_/_0.06)] flex items-center justify-between text-xs text-muted-foreground">
+                <div className="mt-6 pt-5 border-t border-[oklch(0.308_0.034_127_/_0.14)] flex items-center justify-between text-xs text-muted-foreground">
                   <span>{a.read} read</span>
                   <span className="text-gold inline-flex items-center gap-1">Coming soon</span>
                 </div>
@@ -123,7 +123,7 @@ function Insights() {
         </div>
       </section>
 
-      <section className="py-24 border-t border-[oklch(1_0_0_/_0.06)]">
+      <section className="py-24 border-t border-[oklch(0.308_0.034_127_/_0.14)]">
         <div className="mx-auto max-w-[1240px] px-6">
           <span className="text-[11px] uppercase tracking-[0.22em] text-gold">Recommended Videos</span>
           <h2 className="mt-3 font-serif text-3xl md:text-4xl">Stories worth your time.</h2>
@@ -135,7 +135,7 @@ function Insights() {
               <article key={v.title} className="surface-card rounded-2xl overflow-hidden flex flex-col">
                 <div className="relative mx-auto w-full max-w-[320px] pt-8 px-8">
                   <video
-                    className="w-full rounded-xl border border-[oklch(1_0_0_/_0.08)] bg-black"
+                    className="w-full rounded-xl border border-[oklch(0.308_0.034_127_/_0.16)] bg-black"
                     controls
                     playsInline
                     preload="none"
@@ -148,7 +148,7 @@ function Insights() {
                 <div className="p-7 flex flex-col flex-1">
                   <h3 className="font-serif text-xl leading-snug">{v.title}</h3>
                   <p className="mt-3 text-muted-foreground text-sm leading-relaxed flex-1">{v.desc}</p>
-                  <div className="mt-6 pt-5 border-t border-[oklch(1_0_0_/_0.06)] flex items-center justify-between gap-3 text-xs text-muted-foreground">
+                  <div className="mt-6 pt-5 border-t border-[oklch(0.308_0.034_127_/_0.14)] flex items-center justify-between gap-3 text-xs text-muted-foreground">
                     <span>{v.creator}</span>
                     <span className="text-gold inline-flex items-center gap-1.5 shrink-0"><Play size={12} /> Watch video</span>
                   </div>
