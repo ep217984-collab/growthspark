@@ -42,4 +42,4 @@ Other scripts: `build`, `preview`, `lint`, `format`.
 
 ## Missing binary files
 
-Some image and PDF files could not be exported with the source code. See [docs/MISSING_ASSETS.md](docs/MISSING_ASSETS.md) for the list. Copy them from the Lovable project into the same paths before building.
+Some image and PDF files could not be exported with the source code, and three placeholder images stand in for real ones. See [docs/MISSING_ASSETS.md](docs/MISSING_ASSETS.md) for what to replace and add.
