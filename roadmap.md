@@ -1,0 +1,18 @@
+# Requested refinements
+- [ ] Add Jerry's supplied 34.8-second video as a third recommendation card using the approved title and description, preserving John Frye and Leanne Antaya exactly.
+- [ ] Create working downloads for the three named podcast resources and verify all three.
+- [ ] Audit routes, PDFs, footer year, pricing constraints, console output, and desktop/tablet/mobile layouts; keep all changes in preview and do not publish.
+- [x] Verify Sunday David's About and Leadership profiles at desktop, tablet, and mobile; confirm exact one-time display, approved title, division, biography, five responsibilities, no photograph, and no layout or console issues.
+- [x] Count the Leadership page's 13 distinct division labels and update its stale heading from Eleven to Thirteen without changing any labels or profiles.
+- [ ] Keep Jerry's video unpublished until the owner confirms his full display name, book title if applicable, approved heading, accurate description, whether the uploaded file is the approved video source, and an approved thumbnail or permission to use a frame from the video.
+- [x] Correct John Frye and Leanne Antaya video identities without changing their original video or thumbnail assets.
+- [x] Verify both original videos play and matching thumbnails load at 1280, 834, and 390 px; visually inspect layouts and confirm Sunday David remains an unpublished draft and absent from About/Leadership. Three existing tests pass; automatic build reports OK. Saved in preview, not published.
+- [x] Add Woody's supplied article to Featured Authors with the exact uploaded Innocent Souls cover, Kenny Author Growth credit, GrowthSpark Impact publisher credit, and the supplied PDF.
+- [x] Verify the new article, cover proportions, listing link, and both PDF downloads; publish the website.
+- [x] Clarify podcast deliverables, resources, FAQs, and supporting copy without removing sections.
+- [x] Add the podcast inquiry category while preserving the email-based contact workflow.
+- [x] Create Sunday David's unpublished profile draft without invented details.
+- [x] Verify affected pages, navigation, FAQs, contact behavior, and desktop/tablet/mobile layouts.
+- [x] Review automatic code/build diagnostics and report limitations: automatic build reports OK; a separate production build is not manually run under workspace rules, and email delivery requires the visitor's email application.
+- [x] Add Sunday David's owner-approved role, division, biography, and five responsibilities to About and Leadership in the preview, without a photograph; do not publish without authorization.
+- [x] Inspect Jerry's uploaded video: 34.8-second vertical H.264/AAC file with no title, artist, description, or other identification metadata; visually, it shows an older man speaking indoors, but it does not establish his identity, book, or context.
